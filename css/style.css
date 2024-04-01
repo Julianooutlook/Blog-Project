@@ -300,11 +300,10 @@ footer nav {
     .footer-nav {
         display: flex;
         margin-left: 20vw;
-        font-size: 28px;
-    }
-    button:focus {
-        outline: none !important;
-    
+        font-size: 28px;  
+        width: 56vw;
+        height: max-content;
+
     }
 
     #button-voltar-ao-menu {
@@ -391,7 +390,7 @@ footer nav {
 
     #copyPaginaPost {
         margin-top: 1px;
-        background-color: #333;
+        background-color: #F8F8FF;
     }
 
     #footerPaginaPost nav {
