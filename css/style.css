@@ -165,6 +165,8 @@ footer p a {
 
 footer nav {
     background-color: #1C1C1C;
+    border-bottom: 34px solid #1C1C1C;
+    border-top: 34px #1C1C1C;
 }
 #copy {
     color: #F8F8FF;
@@ -300,10 +302,11 @@ footer nav {
     .footer-nav {
         display: flex;
         margin-left: 20vw;
+        border-bottom: 34px solid #1C1C1C;
+        border-top: 34px #1C1C1C;
         font-size: 28px;  
         width: 56vw;
         height: max-content;
-
     }
 
     #button-voltar-ao-menu {
@@ -390,7 +393,7 @@ footer nav {
 
     #copyPaginaPost {
         margin-top: 1px;
-        background-color: #F8F8FF;
+        background-color: #333;
     }
 
     #footerPaginaPost nav {
@@ -407,7 +410,6 @@ footer nav {
     #footerPaginaPost button {
         font-size: 18px;
         margin-left: 8px;
-        /* margin-top: 64px; */
         margin: 8px;
 
     }
