@@ -70,8 +70,9 @@ function showArticleFromURL() {
     }
 };
 // Chama a função 
-showArticleFromURL();
-
+window.onload = showArticleFromURL;
+document.addEventListener('touchstart', showArticleFromURL);
+document.addEventListener('click', showArticleFromURL);
 
 // Atualizar Contador 
 function getAcessos(articleId) {
@@ -291,4 +292,7 @@ function ordenarTodosPorData() {
         });
     });
 }
+
+
+
 
