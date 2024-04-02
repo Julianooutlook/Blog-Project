@@ -4,14 +4,11 @@
     box-sizing: border-box;
     background-color: #F8F8FF;
 }
-
 header {
     text-align: center;
     background: repeating-linear-gradient(-45deg, #fff 0 20px, #f9f9f9 0 40px);
     margin: 8px;
-
 }
-
 header h1 {
     display: inline-block;
     font-size: 48px;
@@ -24,28 +21,23 @@ header h1 {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-
 header h1:hover {
     transform: scale(1.1);
 }
-
 #letraN-span {
     font-family: 'Courier New', Courier, monospace;
     font-size: 64px;
     color: #4682B4;
 }
-
 #letraB-span {
     font-family: 'Courier New', Courier, monospace;
     font-size: 64px;
     color: #4682B4;
 }
-
 .navegacao-bar {
     display: inline-flex;
     margin-left: 8px;
 }
-
 .navegacao-bar,
 button {
     width: 24vw;
@@ -58,24 +50,20 @@ button {
     cursor: pointer;
     border: transparent;
 }
-
 .navegacao-bar,
 button:hover {
     background-color: #696969;
     color: #000000;
 }
-
 .container-cards,
 img {
     display: flex;
     justify-content: space-evenly;
     margin-top: 8px;
 }
-
 .container-cards p:hover {
     transform: scale(1.1);
 }
-
 img {
     cursor: pointer;
     border-radius: 8px;
@@ -85,51 +73,41 @@ img {
     width: 28vw;
     height: 38vh;
 }
-
 img:hover {
     transform: scale(1.1);
 }
-
 .container-cards h2 {
     font-size: 16px;
     background-color: #F8F8FF;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .container-cards p {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
 .container-cards,
 h2 {
     margin-top: 0px;
     text-align: center;
 }
-
 p {
     text-align: center;
-
 }
-
 a {
     font-weight: bold;
     text-decoration: none;
     color: #191970;
 }
-
 a:hover {
     color: #4682B4;
 }
-
 footer {
     display: inline-block;
     background-color: #1C1C1C;
     width: 100%;
     text-align: center;
 }
-
 footer h2 {
     display: inline-block;
     font-size: 48px;
@@ -141,12 +119,9 @@ footer h2 {
     cursor: pointer;
 }
 .footer-nav {
-    display: flex;
-    margin-left: 42vw;
     font-size: 28px;
-    
-}
 
+}
 footer p {
 
     background-color: #1C1C1C;
@@ -155,14 +130,12 @@ footer p {
     line-height: 38px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 footer p a {
     background-color: #1C1C1C;
     color: #f9f9f9;
     margin: 8px;
 
 }
-
 footer nav {
     background-color: #1C1C1C;
     border-bottom: 34px solid #1C1C1C;
@@ -173,7 +146,6 @@ footer nav {
 }
 .container-posts h2 {
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .container-posts p {
@@ -184,27 +156,21 @@ footer nav {
     font-size: larger;
     color: #696969;
     line-height: 1.5;
-
 }
-
 .data {
     margin-left: 1vw;
     border-radius: 8px;
     font-size: 12px;
     color: #696969;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-
 #container-img-data-contador {
     display: flex;
 }
-
 #paragrafoDaVisualizacao {
     color: #696969;
     margin: 0;
 }
-
 .contador {
     border-radius: 8px;
     font-size: 14px;
@@ -213,37 +179,29 @@ footer nav {
     display: flex;
     color: #696969;
 }
-
 #button-voltar-ao-menu {
     width: 12vw;
     margin-bottom: 8px;
 }
-
 .footer-nav:hover {
     background-color: #1C1C1C;
     color: #fff;
 }
-
 #nav-segunda-pagina a {
     background-color: #1C1C1C;
 }
-
 #container-img-data-contador {
     display: flex;
     align-items: center;
     align-content: start;
 }
-
 #paragrafoDaVisualizacao {
     color: #696969;
-
 }
-
 #container-botaoData {
     display: flex;
     text-wrap: nowrap;
 }
-
 #botaoData {
     margin: 8px;
     width: 8vw;
@@ -252,165 +210,136 @@ footer nav {
     color: #000000;
     text-decoration: underline;
 }
-
 #botaoData:hover {
     color: #4682B4;
 }
 
-/* responsividade */
+/* Responsividade dispositivos móveis */
+@media only screen and (min-width: 370px) and (max-width: 479px) {
 
+    #nav-segunda-pagina button {
+        display: flex;
+        margin-left: 48vw;
+    }
+    .footer-nav {
+        display: flex;
+        margin-left: 48vw;
+    }
+    * {
+        margin-left: 0;
+    }
+}
 @media only screen and (max-width: 480px) {
     .navegacao-bar {
         display: flex;
         flex-wrap: wrap;
     }
-
     .navegacao-bar button {
         width: 90vw;
         margin-top: 8px;
         color: #F8F8FF;
         cursor: pointer;
-
     }
-
     .container-cards {
         flex-direction: column;
     }
-
     img {
         width: 97vw;
-
     }
-
     #container-img-data-contador {
         margin-left: 64px;
     }
-
     #botaoData {
         margin-top: 28vh;
     }
-
     #copy {
-        margin-top: 1px;
+        margin-top: 18px;
         background-color: #333;
         color: #F8F8FF;
     }
-
-    footer {
-        display: block;
-    }
     .footer-nav {
-        display: flex;
-        margin-left: 20vw;
-        border-bottom: 34px solid #1C1C1C;
-        border-top: 34px #1C1C1C;
-        font-size: 28px;  
-        width: 56vw;
-        height: max-content;
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        left: -28vw;
     }
-
     #button-voltar-ao-menu {
         width: 28vw;
     }
-
     .container-posts p {
         font-size: 12px;
     }
-
     #logo-footer {
         border: 4px solid;
         box-shadow: 0px 0px 0px;
     }
-
     #copyPaginaPost {
         margin-top: 1px;
         background-color: #333;
+        margin-top: 18px;
+        color: #F8F8FF;
     }
-
-    #footerPaginaPost nav {
-        display: flex;
-    }
-
     #footerPaginaPost h2 {
         box-shadow: 0px 0px 0px;
         border: 4px solid;
 
     }
-
-    #footerPaginaPost button {
-        margin-left: 24vw;
+    #nav-segunda-pagina button {
+        width: max-content;
+        position: absolute;
+        left: -28vw;
     }
 }
-
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
+
     .navegacao-bar {
         display: flex;
         flex-wrap: wrap;
     }
-
     .navegacao-bar button {
         width: 72vw;
         margin-top: 8px;
         margin-left: 12vw;
     }
-
     .container-cards {
         flex-direction: column;
         margin-top: 8vh;
     }
-
     img {
         width: 64vw;
         margin-top: 8px;
-
     }
-
     #container-img-data-contador {
         margin-left: 64px;
     }
-
     #botaoData {
         margin-top: 28vh;
     }
-
     #copy {
         margin-top: 1px;
         background-color: #333;
     }
-
-    footer button {
-        font-size: 20px;
-        padding-top: 28px;
-        width: 40vw;
-
+    .footer-nav {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        left: -28vw;
     }
-
     #logo-footer {
         border: 4px solid;
         box-shadow: 0px 0px 0px;
-
     }
-
     #copyPaginaPost {
         margin-top: 1px;
         background-color: #333;
     }
-
-    #footerPaginaPost nav {
-        display: flex;
-        justify-content: center;
-    }
-
     #footerPaginaPost h2 {
         box-shadow: 0px 0px 0px;
         border: 4px solid;
-
     }
-
-    #footerPaginaPost button {
-        font-size: 18px;
-        margin-left: 8px;
-        margin: 8px;
-
+    #nav-segunda-pagina button {
+        width: max-content;
+        position: absolute;
+        left: -28vw;
     }
 }
