@@ -215,8 +215,11 @@ footer nav {
 }
 
 /* Responsividade dispositivos móveis */
-@media only screen and (min-width: 370px) and (max-width: 479px) {
+@media only screen and (min-width: 370px) and (max-width: 480px) {
 
+    .container-cards {
+        flex-direction: column;
+    }
     #nav-segunda-pagina button {
         display: flex;
         margin-left: 48vw;
@@ -225,11 +228,6 @@ footer nav {
         display: flex;
         margin-left: 48vw;
     }
-    * {
-        margin-left: 0;
-    }
-}
-@media only screen and (max-width: 480px) {
     .navegacao-bar {
         display: flex;
         flex-wrap: wrap;
@@ -239,9 +237,6 @@ footer nav {
         margin-top: 8px;
         color: #F8F8FF;
         cursor: pointer;
-    }
-    .container-cards {
-        flex-direction: column;
     }
     img {
         width: 97vw;
