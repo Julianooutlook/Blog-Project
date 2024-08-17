@@ -53,7 +53,7 @@ function botaoCuriosidades() {
 };
 
 
-// Função para mostrar apenas o artigo especificado na url 
+
 function showArticleFromURL() {
     // Obtém o parâmetro 'post' da URL 
     const params = new URLSearchParams(window.location.search);
@@ -63,18 +63,18 @@ function showArticleFromURL() {
     articles.forEach(function (article) {
         article.style.display = 'none';
     });
-    // Mostra o artigo correspondente ao ID passado via parâmentro 
+
     const articleToShow = document.getElementById(postId);
     if (articleToShow) {
         articleToShow.style.display = 'block';
     }
 };
-// Chama a função 
+
 window.onload = showArticleFromURL;
 document.addEventListener('touchstart', showArticleFromURL);
 document.addEventListener('click', showArticleFromURL);
 
-// Atualizar Contador 
+
 function getAcessos(articleId) {
     return parseInt(localStorage.getItem('acessos_' + articleId) || 0);
 }
@@ -90,7 +90,7 @@ function atualizarContador(articleId) {
     contadorElement.textContent = getAcessos(articleId);
 }
 
-// Contador IA
+
 document.addEventListener('DOMContentLoaded', function () {
     let el = document.querySelector("link-iArtificial");
     el && el.addEventListener('click', swapper, false);
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     atualizarContador('iaERobos');
 });
-// Contador artigos Programação 
+ 
 document.addEventListener('DOMContentLoaded', function () {
     let el = document.querySelector("link-programacao");
     el && el.addEventListener('click', swapper, false);
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     atualizarContador('futuro');
 });
-// Contador Cibersegurança 
+
 document.addEventListener('DOMContentLoaded', function () {
     let el = document.querySelector("link-ciberseguranca");
     el && el.addEventListener('click', swapper, false);
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     atualizarContador('navSegura');
 });
-// Contador curiosidades 
+
 document.addEventListener('DOMContentLoaded', function () {
     let el = document.querySelector("link-animaisEtecnologia");
 
@@ -270,7 +270,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// Ordernar por data decrescente
 function ordenarTodosPorData() {
 
     let containers = document.querySelectorAll('.container-cards');
